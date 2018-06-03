@@ -1,0 +1,27 @@
+page-tutorial {
+    .slide-image {
+        height: 100vh;
+        width: auto;
+    }
+    .slide-content {
+        position: absolute;
+        bottom: 30px;
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding: 35px;
+        font-size: 18px;
+        font-family: 'ubuntu', sans-serif;
+        font-weight: 400;
+        z-index: 3;
+    }
+    .tutorial-slide::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(#92ACD8, .9);
+    }
+}

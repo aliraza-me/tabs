@@ -1,0 +1,24 @@
+<!-- <ion-header no-shadow>
+  <ion-buttons>
+    <button ion-button color="primary"> Skip </button>
+  </ion-buttons>
+</ion-header> -->
+
+<ion-content>
+  <ion-slides>
+    <ion-slide *ngFor="let slide of slides" class="tutorial-slide">
+        <img [src]="slide.image" class="slide-image" />
+        <div class="slide-content">
+          <p [innerHTML]="slide.description"></p>
+        </div> 
+    </ion-slide>
+
+    <ion-slide class="tutorial-slide">
+        <img src="assets/imgs/slide-02.png" class="slide-image" />
+        <div class="slide-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, veritatis?</p>
+          <button ion-button large class="button-white" (click)="startApp">Let's go ...</button>
+        </div> 
+    </ion-slide>
+  </ion-slides>
+</ion-content>
